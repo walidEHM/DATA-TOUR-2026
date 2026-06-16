@@ -1,0 +1,13 @@
+﻿colonne,fichier,description_rapide
+id,"train.csv, test.csv, sample_submission.csv",Identifiant unique anonymisé de la transaction; sert à relier chaque prédiction à une ligne du test.
+period,"train.csv, test.csv",Période ou étape temporelle simulée de la transaction; utile pour capturer l'ordre chronologique.
+operation,"train.csv, test.csv","Type d'opération Mobile Money anonymisé, par exemple op_01, op_02, etc."
+amount,"train.csv, test.csv",Montant de la transaction
+origin_account,"train.csv, test.csv",Compte ou utilisateur anonymisé qui initie la transaction.
+origin_balance_before,"train.csv, test.csv",Solde du compte initiateur avant la transaction.
+origin_balance_after,"train.csv, test.csv",Solde du compte initiateur après la transaction
+destination_account,"train.csv, test.csv","Compte, marchand, agent ou destinataire anonymisé de la transaction."
+destination_balance_before,"train.csv, test.csv",Solde du destinataire avant la transaction.
+destination_balance_after,"train.csv, test.csv",Solde du destinataire après la transaction
+fraud_flag,train.csv uniquement,"Variable cible: 1 si la transaction est frauduleuse, 0 sinon. Absente du test."
+target,"sample_submission.csv, submission.csv",Probabilité prédite que la transaction soit frauduleuse; valeur attendue entre 0 et 1.
